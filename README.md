@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Diaries App](/login.jpg)
+![Diaries App](public/login.jpg)
 
 
 ## Available Scripts
