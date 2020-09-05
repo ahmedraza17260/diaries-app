@@ -8,6 +8,7 @@ import { setUser } from "./userSlice";
 import { AuthResponse } from "../../services/mirage/routes/user";
 import { useAppDispatch } from "../../store";
 
+// eslint-disable-next-line
 const schema = Yup.object().shape({
   username: Yup.string()
     .required("What? No username?")
@@ -48,6 +49,7 @@ const Auth: FC = () => {
   return (
     <div className="auth">
       <div className="card">
+        <h1 className="h1">Diaries App</h1>
         <form onSubmit={handleSubmit(submitForm)}>
           <div className="inputWrapper">
             <input ref={register} name="username" placeholder="Username" />
@@ -89,11 +91,24 @@ const Auth: FC = () => {
 
           <p
             onClick={() => setIsLogin(!isLogin)}
-            style={{ cursor: "pointer", opacity: 0.7 }}
+            style={{ cursor: "pointer", opacity: 0.7, color: "black" }}
           >
             {isLogin ? "No account? Create one" : "Already have an account?"}
           </p>
         </form>
+        <div className="copyRight">
+          <h5 style={{ color: "black" }}> Powered by Ahmed Raza </h5>
+          <a
+            style={{ color: "black" }}
+            href="https://github.com/ahmedraza17260"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {" "}
+            <h5 style={{ color: "black" }}> &copy; 2020 Ahmed Raza </h5>{" "}
+          </a>
+          <h5 style={{ color: "black" }}> All Right Reserved </h5>
+        </div>
       </div>
     </div>
   );

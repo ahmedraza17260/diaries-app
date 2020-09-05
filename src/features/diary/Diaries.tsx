@@ -34,11 +34,11 @@ const Diaries: FC = () => {
 
     fetchDiaries();
   }, [dispatch, user]);
-
+  // in line 41 after next &rarr;
   const createDiary = async () => {
     const result: any = await Swal.mixin({
       input: "text",
-      confirmButtonText: "Next &rarr;",
+      confirmButtonText: "Next ",
       showCancelButton: true,
       progressSteps: ["1", "2"],
     }).queue([
@@ -83,13 +83,15 @@ const Diaries: FC = () => {
   };
 
   return (
-    <div style={{ padding: "1em 0.4em" }}>
+    <div className="" style={{ padding: "1em 0.4em" }}>
       <Switch>
         <Route path="/diary/:id">
           <DiaryEntriesList />
         </Route>
         <Route path="/">
-          <button onClick={createDiary}>Create New</button>
+          <button className="bg" onClick={createDiary}>
+            Create New
+          </button>
           {diaries.map((diary, idx) => (
             <DiaryTile key={idx} diary={diary} />
           ))}

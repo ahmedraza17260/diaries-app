@@ -70,10 +70,11 @@ const DiaryTile: FC<Props> = (props) => {
           <span>{diary.title}</span>
         )}
       </h2>
-      <p className="subtitle">{totalEntries ?? "0"} saved entries</p>
+      <p className="subtitle">{totalEntries ?? "0"} Saved Entries</p>
 
       <div style={{ display: "flex" }}>
         <button
+          className="bg"
           style={buttonStyle}
           onClick={() => {
             dispatch(setCanEdit(true));

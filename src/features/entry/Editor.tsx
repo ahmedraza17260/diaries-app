@@ -123,7 +123,7 @@ const Editor: FC = () => {
               }
             }}
           />
-          <button onClick={saveEntry} disabled={!canEdit}>
+          <button className="bg" onClick={saveEntry} disabled={!canEdit}>
             Save
           </button>
         </>

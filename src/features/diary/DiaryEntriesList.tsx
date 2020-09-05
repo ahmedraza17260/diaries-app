@@ -32,8 +32,11 @@ const DiaryEntriesList: FC = () => {
   return (
     <div className="entries">
       <header>
-        <Link to="/">
-          <h3>← Go Back</h3>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <h3 className="bg">
+            {/* ← */}
+            Go Back
+          </h3>
         </Link>
       </header>
       <ul>
