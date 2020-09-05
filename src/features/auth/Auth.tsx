@@ -18,7 +18,7 @@ const schema = Yup.object().shape({
 
 const Auth: FC = () => {
   const { handleSubmit, register, errors } = useForm<User>({
-    validationSchema: schema,
+    // validationSchema: schema,
   });
 
   const [isLogin, setIsLogin] = useState(true);
