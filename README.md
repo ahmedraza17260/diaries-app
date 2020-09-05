@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Diaries App](public/login.jpg)
+
+![Create-Diaries](public/create-diary.jpg)
+
+![Diaries list](public/diary-list.jpg)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
