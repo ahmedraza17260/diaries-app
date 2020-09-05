@@ -2,6 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![Diaries App](public/login.jpg)
 
+![Create-Diaries](public/create-diary.jpg)
+
+![Diaries list](public/diary-list.jpg)
+
 
 ## Available Scripts
 
