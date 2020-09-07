@@ -8,6 +8,8 @@ import { setUser } from "./userSlice";
 import { AuthResponse } from "../../services/mirage/routes/user";
 import { useAppDispatch } from "../../store";
 
+// import { yupResolver } from '@hookform/resolvers';
+
 // eslint-disable-next-line
 const schema = Yup.object().shape({
   username: Yup.string()
@@ -20,6 +22,7 @@ const schema = Yup.object().shape({
 const Auth: FC = () => {
   const { handleSubmit, register, errors } = useForm<User>({
     // validationSchema: schema,
+    // resolver: yupResolver(schema)
   });
 
   const [isLogin, setIsLogin] = useState(true);
